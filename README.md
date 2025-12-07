@@ -1,90 +1,66 @@
-## 📝 Documentação do Projecto Gravo Business Solution
+## 📝 Documentação do Projecto Gravo - Guia de Contribuição
 
-Este projecto é baseado em [Next.js](https://nextjs.org) e foi iniciado com [`create-next-app`](<https://www.google.com/search?q=%5Bhttps://nextjs.org/docs/app/api-reference/cli/create-next-app%5D(https://nextjs.org/docs/app/api-reference/cli/create-next-app)>).
+Este projecto [Next.js](https://nextjs.org) utiliza o _App Router_ e a fonte _Geist_. O repositório é [https://github.com/hutadev/gravo-hutadev](https://github.com/hutadev/gravo-hutadev).
 
-### 1\. 🚀 Iniciação
+### 1\. ⚙️ Como Clonar o Repositório
 
-Para começar a trabalhar neste projecto localmente, siga os seguintes passos:
+Siga estes passos para obter uma cópia local do código:
 
-**Installação das Dependências:**
+1.  **Pré-requisito:** Certifique-se de que tem o Git installado no seu sistema.
 
-Após clonar o repositório (ver secção 2), navegue para a pasta do projecto e installe todas as dependências necessárias:
+2.  **Clonar:** Abra o terminal ou a linha de comandos e execute o commando `clone` com a URL do repositório:
 
-```bash
-npm install
-```
+    ```bash
+    git clone https://github.com/hutadev/gravo-hutadev.git
+    ```
 
-**Executar o Servidor de Desenvolvimento:**
+3.  **Aceder à Directoria:** Mude para a directoria do projecto recém-clonado:
 
-Execute o servidor local para iniciar o projecto:
+    ```bash
+    cd gravo-hutadev
+    ```
 
-```bash
-npm run dev
-```
+### 2\. 🚀 Como Executar o Projecto Localmente
 
-### 2\. 💻 Como Clonar e Contribuir
+Após clonar o código, siga para a execução do servidor de desenvolvimento:
 
-Agradecemos o seu interesse em contribuir para o repositório [https://github.com/hutadev/gravo-hutadev](https://github.com/hutadev/gravo-hutadev). Siga as instruções abaixo para começar a contribuir.
+1.  **Installar Dependências:** Installe todos os pacotes necessários definidos no `package.json`:
 
-**Passo 1: Clonar o Repositório**
+    ```bash
+    npm install
+    ```
 
-Utilize o Git para clonar o repositório para o seu ambiente de trabalho local:
+2.  **Executar o Servidor:** Inicie o servidor de desenvolvimento do Next.js:
 
-```bash
-git clone https://github.com/hutadev/gravo-hutadev.git
-```
+    ```bash
+    npm run dev
+    ```
 
-**Passo 2: Navegar e Installar Dependências**
+3.  **Visualização:** Abra o seu _browser_ e aceda a [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) para ver o resultado da aplicação.
 
-Entre na directoria do projecto e installe as dependências conforme indicado na secção 1:
+### 3\. ✍️ Como Contribuir (Passo-a-Passo)
 
-```bash
-cd gravo-hutadev
-npm install
-```
+Se deseja submeter alterações, siga o fluxo de trabalho de contribuição padrão:
 
-**Passo 3: Criar um _Branch_ de Contribuição**
+1.  **Criar um Novo _Branch_**: Crie um _branch_ (ramo) para as suas alterações. Substitua `nome-do-seu-branch` por algo descritivo (_e.g., feature/menu-responsivo_):
 
-Crie um novo _branch_ (ramo) para as suas alterações. Utilize um nome descritivo (e.g., _feature/adicionar-funcionalidade_ ou _fix/corrigir-erro_):
+    ```bash
+    git checkout -b nome-do-seu-branch
+    ```
 
-```bash
-git checkout -b nome-do-seu-branch
-```
+2.  **Fazer Alterações:** Edite os ficheiros do projecto (_e.g., app/page.tsx_) e implemente as suas funcionalidades ou correcções.
 
-**Passo 4: Implementar Alterações**
+3.  **Adicionar e Confirmar (_Commit_) Alterações:** Adicione os ficheiros modificados e crie um _commit_ descritivo:
 
-Faça as alterações e melhorias desejadas no código do projecto.
+    ```bash
+    git add .
+    git commit -m "feat: Adiciona menu de navegação responsivo"
+    ```
 
-**Passo 5: Confirmar (_Commit_) as Alterações**
+4.  **Enviar (_Push_) o _Branch_**: Envie o seu _branch_ para o repositório remoto no GitHub:
 
-Quando as alterações estiverem prontas, adicione os ficheiros e confirme-os no seu _branch_:
+    ```bash
+    git push origin nome-do-seu-branch
+    ```
 
-```bash
-git add .
-git commit -m "Descreva de forma clara e objectiva as suas alterações"
-```
-
-**Passo 6: Enviar (_Push_) o _Branch_**
-
-Envie o seu _branch_ para o repositório remoto no GitHub:
-
-```bash
-git push origin nome-do-seu-branch
-```
-
-**Passo 7: Criar um _Pull Request_**
-
-Aceda ao repositório no GitHub ([https://github.com/hutadev/gravo-hutadev](https://github.com/hutadev/gravo-hutadev)) e crie um **Pull Request (PR)** a partir do seu _branch_ para o _branch_ principal (`main`). Descreva as suas alterações em detalhe para facilitar a revisão.
-
-### 3\. 📚 Recursos
-
-Para aprender mais sobre Next.js, consulte a documentação official:
-
-- [Next.js Documentation](https://nextjs.org/docs) - aprenda acêrca das funcionalidades e API do Next.js.
-- [Learn Next.js](https://nextjs.org/learn) - um tutorial interactivo de Next.js.
-
-### 4\. ☁️ _Deploy_ na Vercel
-
-O método mais simples para fazer o _deploy_ (implantação) desta aplicação Next.js é através da [Plataforma Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
-
-Consulte a [documentação de _deploy_ Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para mais informações.
+5.  **Criar _Pull Request_ (PR):** Aceda ao [repositório no GitHub](https://github.com/hutadev/gravo-hutadev) e crie um **Pull Request (PR)** a partir do seu _branch_. Certifique-se de que a descrição explica claramente o objectivo das suas alterações.
