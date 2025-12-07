@@ -25,7 +25,6 @@ export function Hero() {
             </div>
 
             <div className="tt">
-              <p className="text-mob">para</p>
               <span className="icon">
                 <span className="right">
                   <IoArrowForwardOutline />
