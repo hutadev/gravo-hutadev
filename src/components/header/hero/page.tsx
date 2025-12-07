@@ -21,11 +21,11 @@ export function Hero() {
                 </span>
               </span>
 
-              <p className="end-none">para</p>
+              <p>para</p>
             </div>
 
             <div className="tt">
-              <p className="start-none">para</p>
+              <p className="text-mob">para</p>
               <span className="icon">
                 <span className="right">
                   <IoArrowForwardOutline />
@@ -35,15 +35,6 @@ export function Hero() {
                 </span>
               </span>
               <p>negocios</p>
-              <span className="icon end-none">
-                <span className="left">
-                  <MdOutlineInterests />
-                </span>
-              </span>
-              <p className="end-none">vida</p>
-            </div>
-
-            <div className="tt start-none">
               <span className="icon">
                 <span className="left">
                   <MdOutlineInterests />
