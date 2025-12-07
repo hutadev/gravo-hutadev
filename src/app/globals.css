@@ -17,17 +17,17 @@ html {
   scroll-padding-top: 100px;
   transition: 0.3s ease;
   font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
-  user-select: none;
+  /* user-select: none; */
   font-size: 1rem;
 }
 
 ::selection {
-  background-color: var(--black);
+  background-color: var(--lilac);
   color: var(--white);
 }
 
 ::-moz-selection {
-  background-color: var(--black);
+  background-color: var(--lilac);
   color: var(--white);
 }
 
@@ -37,6 +37,7 @@ html {
   --white-sec: #f2f2f3;
   --black: #000000;
   --black-sec: #2c2b37;
+  --black-dark: #1f1f27;
   --gray: #64615b;
   --lilac: #5c30b5;
   --lilac-hover: #44218a;
@@ -50,14 +51,13 @@ body {
   width: 100%;
   max-width: 1700px;
   font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--text);
   margin: 0 auto;
-  color: var(--black);
   background-color: var(--bg);
 }
 
 main {
-  margin: 0 0 50px 0;
-  width: 100%;
+  margin-top: 110px;
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -89,7 +89,11 @@ h6 {
   line-height: 1.1;
   color: var(--black);
   transition: 0.3s ease;
-  font-family: "FontBold";
+  color: var(--white);
+}
+
+p {
+  line-height: 1.6;
 }
 
 nav,

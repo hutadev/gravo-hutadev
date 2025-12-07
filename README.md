@@ -1,4 +1,4 @@
-## 📝 Documentação do Projecto Gravo - Guia de Contribuição
+## 📝 Documentação do Projecto
 
 Este projecto [Next.js](https://nextjs.org) utiliza o _App Router_ e a fonte _Geist_. O repositório é [https://github.com/hutadev/gravo-hutadev](https://github.com/hutadev/gravo-hutadev).
 
