@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fontes/Inter.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  transition: 0.3s ease;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  user-select: none;
+  font-size: 1rem;
+}
+
+::selection {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+::-moz-selection {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+:root {
+  --red: #ff0044;
+  --white: #ffffff;
+  --white-sec: #f2f2f3;
+  --black: #000000;
+  --black-sec: #2c2b37;
+  --gray: #64615b;
+  --lilac: #5c30b5;
+  --lilac-hover: #44218a;
+  --bg: #000319;
+  --bg-sec: #090d20;
+  --border: 1px solid var(--black-sec);
+  --text: #a2a2a2;
+}
+
+body {
+  width: 100%;
+  max-width: 1700px;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  color: var(--black);
+  background-color: var(--bg);
+}
+
+main {
+  margin: 0 0 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+a,
+button,
+input,
+textarea {
+  all: unset;
+  transition: 0.3s ease;
+}
+
+a,
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  color: var(--black);
+  transition: 0.3s ease;
+  font-family: "FontBold";
+}
+
+nav,
+ul {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+figure {
+  position: relative;
+  width: fit-content;
+  display: grid;
+  place-items: center;
+  user-select: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+}
+
+img {
+  transition: 0.3s ease;
+}
+
+.title {
+  transition: 0.3s ease;
+}
+
+.icon,
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.icon svg {
+  font-size: 1.3rem;
+}

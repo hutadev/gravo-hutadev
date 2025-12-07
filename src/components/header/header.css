@@ -1,0 +1,171 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: var(--white);
+}
+
+.header {
+  margin: auto;
+  width: calc(100% - 40px);
+  max-width: 1000px;
+  background-color: var(--bg-sec);
+  border: var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border-radius: 100px;
+  position: relative;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.header .link-desk {
+  width: 100%;
+}
+
+.header .link-desk ul {
+  flex-direction: row;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.header .link-desk ul li a {
+  color: var(--text);
+  &:hover,
+  &:focus {
+    color: var(--lilac);
+  }
+}
+
+.header .link-desk ul li .link-home {
+  color: var(--white);
+}
+
+.header .btn .btn-contact {
+  background-color: var(--lilac);
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-wrap: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: var(--lilac-hover);
+  }
+
+  &:active {
+    background-color: var(--lilac);
+  }
+}
+
+.header .btn .show-hidden-menu {
+  display: none;
+}
+
+.header .btn .show-hidden-menu .icon {
+  transition: opacity 0.3s ease;
+
+  & svg {
+    font-size: 1.7rem;
+  }
+}
+
+.header .btn .show-hidden-menu .icon.visivel {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.header .btn .show-hidden-menu .icon.oculto {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.header .btn .show-hidden-menu .icon-hidden {
+  display: none;
+}
+
+.menu-mobile {
+  width: 100%;
+  max-width: 300px;
+  right: 0;
+  top: 90px;
+  position: absolute;
+  background-color: var(--bg-sec);
+  border-radius: 20px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.menu-mobile.aberto {
+  opacity: 1;
+  height: 330px;
+  padding: 30px 0;
+}
+
+.menu-mobile .link-mobile {
+  width: 100%;
+}
+
+.menu-mobile .link-mobile ul {
+  gap: 0;
+}
+
+.menu-mobile .link-mobile a {
+  justify-content: left;
+  width: 100%;
+  color: var(--text);
+  height: 45px;
+  padding-left: 30px;
+
+  &:hover {
+    background-color: var(--lilac);
+    color: var(--white);
+  }
+
+  &:active {
+    background-color: var(--lilac-hover);
+  }
+}
+
+.menu-mobile .link-mobile .link-home {
+  color: var(--white);
+}
+
+@media (width > 745px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+
+@media (width < 745px) {
+  .header .link-desk {
+    display: none;
+  }
+
+  .header .btn .show-hidden-menu {
+    display: flex;
+  }
+}
+
+@media (width < 445px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header .btn .btn-contact {
+    display: none;
+  }
+}
