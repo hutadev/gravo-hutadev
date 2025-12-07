@@ -1,6 +1,5 @@
 import "./hero.css"
 import Link from "next/link"
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 import { IoArrowForwardOutline, IoArrowBackOutline } from "react-icons/io5"
 import { MdOutlineInterests } from "react-icons/md"
 
