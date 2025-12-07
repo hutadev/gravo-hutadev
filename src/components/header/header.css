@@ -24,7 +24,8 @@ header {
 
 .header .logo {
   font-size: 1.5rem;
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.7;
   }
 }
@@ -71,6 +72,11 @@ header {
 
 .header .btn .show-hidden-menu {
   display: none;
+
+  &:hover svg,
+  &:focus svg {
+    color: var(--lilac);
+  }
 }
 
 .header .btn .show-hidden-menu .icon {
@@ -78,6 +84,11 @@ header {
 
   & svg {
     font-size: 1.7rem;
+
+    &:hover,
+    &:focus {
+      color: var(--lilac);
+    }
   }
 }
 
@@ -90,6 +101,7 @@ header {
   opacity: 0;
   pointer-events: none;
   position: absolute;
+  color: var(--lilac);
 }
 
 .header .btn .show-hidden-menu .icon-hidden {
@@ -107,12 +119,14 @@ header {
   height: 0;
   overflow: hidden;
   transition: 0.3s ease;
+  visibility: hidden;
 }
 
 .menu-mobile.aberto {
   opacity: 1;
   height: 330px;
   padding: 30px 0;
+  visibility: visible;
 }
 
 .menu-mobile .link-mobile {
@@ -130,7 +144,8 @@ header {
   height: 45px;
   padding-left: 30px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--lilac);
     color: var(--white);
   }
