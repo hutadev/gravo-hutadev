@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Header } from "@/components/header/page"
 import "./globals.css"
 
+const BASE_URL = "https://gravo-hutadev.vercel.app"
+
 export const metadata: Metadata = {
   title: "Gravo Business Solution | Soluções Digitais & SaaS para Crescimento Empresarial",
   description:
@@ -12,29 +14,30 @@ export const metadata: Metadata = {
   creator: "Hutauta Developer (HutaDev)",
   publisher: "Hutauta Developer (HutaDev)",
   robots: "index, follow",
-  metadataBase: new URL("https://gravo-hutadev.vercel.app/"),
+
+  metadataBase: new URL(BASE_URL),
   manifest: "/site.webmanifest",
 
   icons: {
     icon: [
-      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico", rel: "shortcut icon" }
+      { url: `${BASE_URL}/favicon.ico` },
+      { url: `${BASE_URL}/favicon.svg`, type: "image/svg+xml" },
+      { url: `${BASE_URL}/favicon-96x96.png`, sizes: "96x96", type: "image/png" }
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }]
+    apple: [{ url: `${BASE_URL}/apple-touch-icon.png`, sizes: "180x180" }]
   },
 
   openGraph: {
     title: "Gravo Business Solution | Plataforma Digital Innovadora",
     description:
       "Criamos plataformas SaaS user-centric que transformam negócios, simplificam operações e aceleram o crescimento. O seu parceiro em soluções digitais technológicas.",
-    url: "https://gravo-hutadev.vercel.app/",
+    url: BASE_URL,
     siteName: "Gravo Business Solution",
     type: "website",
     locale: "pt_PT",
     images: [
       {
-        url: "/demo.webp",
+        url: `${BASE_URL}/demo.webp`,
         width: 1200,
         height: 630,
         alt: "Demonstração visual do design sustentável Gravo"
@@ -47,14 +50,13 @@ export const metadata: Metadata = {
     title: "Gravo Business Solution | Soluções para Negócios & Vida",
     description:
       "SaaS e Soluções Digitais de ponta para optimizar a gestão e productividade. Desenvolvido com Python, Next.js e React.js.",
-    images: ["/demo.webp"]
+    images: [`${BASE_URL}/demo.webp`]
   },
 
   appleWebApp: {
     title: "Gravo"
   }
 }
-
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pr">
