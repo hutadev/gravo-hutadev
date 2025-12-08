@@ -76,7 +76,7 @@ export function Header() {
             Contacte-nos
           </Link>
 
-          <button ref={botaoRef} className="show-hidden-menu" onClick={alternarMenu}>
+          <button ref={botaoRef} className="show-hidden-menu" onClick={alternarMenu} aria-label="Abrir ou fechar menu">
             <div className={`icon ${menuVisivel ? "oculto" : "visivel"}`}>
               <HiOutlineMenuAlt4 />
             </div>
