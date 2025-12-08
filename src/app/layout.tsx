@@ -1,9 +1,10 @@
+import React from "react"
+import { LenisWrapper } from "@/components/leniswrapper/page"
 import type { Metadata } from "next"
 import { Header } from "@/components/header/page"
 import "./globals.css"
 
 const BASE_URL = "https://gravo-hutadev.vercel.app"
-
 export const metadata: Metadata = {
   title: "Gravo Business Solution | Soluções Digitais & SaaS para Crescimento Empresarial",
   description: "Plataforma digital innovadora para elevar a experiência de Negócios. Criamos soluções SaaS user-centric, prontas para o futuro, que impulsionam a productividade e o crescimento das emprêzas.",
@@ -49,12 +50,13 @@ export const metadata: Metadata = {
     title: "Gravo"
   }
 }
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt">
       <body>
         <Header />
-        {children}
+        <LenisWrapper>{children}</LenisWrapper>
       </body>
     </html>
   )

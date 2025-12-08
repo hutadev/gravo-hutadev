@@ -11,7 +11,7 @@ export function ClientCompany() {
   return (
     <>
       <section className="clientcompany">
-        <p>De start-ups a fortune $400+$, associamo-nos a marcas de todos os tamanhos.</p>
+        <p>De start-ups a fortune $400+ associamo-nos a marcas de todos os tamanhos.</p>
         <div className="container">
           <figure>
             <Image className="webflow" src={webflow} alt="Logo da webflow" width={100} height={30} loading="lazy" />
