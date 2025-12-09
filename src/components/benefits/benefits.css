@@ -1,0 +1,72 @@
+.benefits {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.benefits .box-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.benefits .box-benefits .title-section {
+  max-width: 550px;
+  margin: 0;
+  text-align: left;
+}
+
+.benefits .box-benefits .title-section .bt {
+  margin: 0 0 10px 0;
+}
+
+.benefits .box-benefits .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.benefits .box-benefits .info .box {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+}
+
+.benefits .box-benefits .info .box .icon {
+  padding: 13px;
+  border-radius: 100px;
+  border: var(--border);
+  background-color: var(--bg-sec);
+}
+
+.benefits .box-benefits .info .box .title {
+  color: var(--white);
+  font-weight: bold;
+  opacity: 0.9;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.benefits .box-benefits .info a {
+  padding: 10px 20px;
+  background-color: var(--lilac);
+  width: fit-content;
+  border-radius: 100px;
+  color: var(--white);
+
+  &:hover,
+  &:focus {
+    background-color: var(--lilac-hover);
+  }
+
+  &:active {
+    background-color: var(--lilac);
+  }
+}

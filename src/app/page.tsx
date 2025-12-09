@@ -1,3 +1,4 @@
+import { Benefits } from "@/components/benefits/benefits"
 import { ClientCompany } from "@/components/clientcompany/page"
 import { Feature } from "@/components/feature/feature"
 import { Hero } from "@/components/hero/page"
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroTeam />
       <ClientCompany />
       <Feature />
+      <Benefits />
     </main>
   )
 }
