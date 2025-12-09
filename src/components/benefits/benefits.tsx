@@ -1,7 +1,9 @@
+import Image from "next/image"
 import { TitleSection } from "../title/title"
 import "./benefits.css"
 import { GoMegaphone, GoMail } from "react-icons/go"
 import Link from "next/link"
+import Girl from "@/assets/girl.png"
 
 export function Benefits() {
   return (
@@ -33,6 +35,10 @@ export function Benefits() {
             <Link href="#">Começar agora</Link>
           </div>
         </div>
+
+        <figure>
+          <Image src={Girl} alt="Girl" width={300} height={400} loading="lazy" />
+        </figure>
       </section>
     </>
   )
