@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   robots: "index, follow",
 
   metadataBase: new URL(BASE_URL),
-  manifest: "https://gravo-hutadev.vercel.app/site.webmanifest",
+  manifest: "/site.webmanifest",
 
   icons: {
     icon: [{ url: `${BASE_URL}/favicon.ico` }, { url: `${BASE_URL}/favicon.svg`, type: "image/svg+xml" }, { url: `${BASE_URL}/favicon-96x96.png`, type: "image/png" }],
