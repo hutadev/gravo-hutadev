@@ -224,6 +224,11 @@ img {
   }
 }
 
+.grid-3 .card .icon-section .icon svg {
+  color: var(--white);
+  opacity: 0.8;
+}
+
 .grid-3 .card .info {
   display: flex;
   flex-direction: column;
