@@ -1,6 +1,5 @@
 .clientcompany {
   margin: auto;
-  margin-top: 330px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -19,7 +18,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .clientcompany .container figure img {
@@ -31,66 +30,19 @@
 .clientcompany .container figure .editorx,
 .clientcompany .container figure .framer,
 .clientcompany .container figure .spotify {
-  width: 95px !important;
+  width: 95px;
 }
 
 .clientcompany .container figure .wordpress {
-  width: 130px !important;
+  width: 138px;
 }
 
 .clientcompany .container figure .squarespace {
-  width: 160px !important;
+  width: 180px;
 }
 
-@media (width < 581px) {
-  .clientcompany {
-    margin-top: 250px;
-  }
-}
-
-@media (width < 501px) {
-  .clientcompany {
-    margin-top: 170px;
-  }
-
+@media (width < 840px) {
   .clientcompany .container {
     justify-content: center;
-    gap: 20px;
-  }
-}
-
-@media (width < 434px) {
-  .clientcompany {
-    margin-top: 150px;
-  }
-}
-
-@media (width < 401px) {
-  .clientcompany {
-    margin-top: 180px;
-  }
-}
-
-@media (width < 335px) {
-  .clientcompany {
-    margin-top: 150px;
-  }
-}
-
-@media (width < 315px) {
-  .clientcompany {
-    margin-top: 110px;
-  }
-}
-
-@media (width < 277px) {
-  .clientcompany {
-    margin-top: 90px;
-  }
-}
-
-@media (width < 238px) {
-  .clientcompany {
-    margin-top: 50px;
   }
 }

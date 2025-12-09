@@ -1,9 +1,7 @@
-import Image from "next/image"
 import "./hero.css"
 import Link from "next/link"
 import { IoArrowForwardOutline, IoArrowBackOutline } from "react-icons/io5"
 import { MdOutlineInterests } from "react-icons/md"
-import heroTeam from "../../assets/hero-team.webp"
 
 export function Hero() {
   return (
@@ -54,13 +52,6 @@ export function Hero() {
               Saber mais
             </Link>
           </div>
-        </div>
-
-        <div className="hero-team">
-          <p className="title">Adoptamos a abordagem de design mais centrada no utilizador.</p>
-          <figure>
-            <Image src={heroTeam} alt="Team" width={400} height={300} loading="lazy" />
-          </figure>
         </div>
       </section>
     </>
