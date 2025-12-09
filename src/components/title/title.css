@@ -1,0 +1,28 @@
+.title-section {
+  margin: auto;
+  text-align: center;
+  max-width: 500px;
+}
+
+.title-section .bt {
+  border: var(--border);
+  border-radius: 100px;
+  padding: 10px 20px;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: var(--bg-sec);
+}
+
+.title-section .title {
+  font-size: 1.7rem;
+  line-height: 1.2;
+  color: var(--white);
+  font-weight: 600;
+}
+
+@media (width < 420px) {
+  .title-section .title {
+    font-size: 1.4rem;
+  }
+}
