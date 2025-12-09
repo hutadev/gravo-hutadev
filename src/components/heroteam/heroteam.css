@@ -52,9 +52,9 @@
   }
 }
 
-@media (width < 555px) {
+@media (width < 400px) {
   .hero-team {
-    margin-top: -120px;
+    margin-top: -90px;
   }
   .hero-team .title {
     transform: translateY(-30px);
