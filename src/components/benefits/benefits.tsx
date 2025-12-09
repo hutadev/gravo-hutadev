@@ -3,7 +3,7 @@ import { TitleSection } from "../title/title"
 import "./benefits.css"
 import { GoMegaphone, GoMail } from "react-icons/go"
 import Link from "next/link"
-import Girl from "@/assets/girl.png"
+import Girl from "@/assets/girl.webp"
 
 export function Benefits() {
   return (
