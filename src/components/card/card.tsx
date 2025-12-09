@@ -1,7 +1,7 @@
 import "./card.css"
 
 interface CardProps {
-  icon: string
+  icon: React.ReactNode
   title: string
   text: string
 }
