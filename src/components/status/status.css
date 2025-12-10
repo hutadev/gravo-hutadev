@@ -74,6 +74,10 @@
     gap: 20px;
     flex-wrap: wrap;
   }
+
+  .Status .tt {
+    text-align: center;
+  }
 }
 
 @media (width < 366px) {
