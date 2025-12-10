@@ -1,0 +1,37 @@
+.relable {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.relable .card {
+  text-align: center;
+  background-image: linear-gradient(to top, #5c30b538, transparent 40%);
+}
+
+.relable .card .icon-section {
+  margin: auto;
+
+  &::after {
+    background-image: linear-gradient(to right, transparent, #7575756b, transparent);
+  }
+}
+
+.relable a {
+  background-color: var(--lilac);
+  padding: 15px 20px;
+  border-radius: 100px;
+  width: fit-content;
+  margin: auto;
+  color: var(--white);
+
+  &:hover,
+  &:focus {
+    background-color: var(--lilac-hover);
+  }
+
+  &:active {
+    background-color: var(--lilac);
+  }
+}

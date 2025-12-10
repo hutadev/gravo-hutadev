@@ -1,0 +1,55 @@
+.easetouse {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  background-image: url("@/assets/bg-grid-2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 1300px;
+  position: relative;
+
+  &::after {
+    background-color: var(--bg-sec);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.easetouse .title {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.easetouse p {
+  margin: auto;
+  max-width: 500px;
+}
+
+.easetouse a {
+  color: var(--white);
+  background-color: var(--lilac);
+  padding: 15px 20px;
+  border-radius: 100px;
+  margin: auto;
+  width: fit-content;
+
+  &:hover,
+  &:focus {
+    background-color: var(--lilac-hover);
+  }
+
+  &:active {
+    background-color: var(--lilac);
+  }
+}

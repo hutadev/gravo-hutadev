@@ -1,8 +1,10 @@
 import { Benefits } from "@/components/benefits/benefits"
 import { ClientCompany } from "@/components/clientcompany/page"
+import { EaseToUse } from "@/components/easetouse/easetouse"
 import { Feature } from "@/components/feature/feature"
 import { Hero } from "@/components/hero/page"
 import { HeroTeam } from "@/components/heroteam/heroteam"
+import { Relable } from "@/components/relable/relable"
 import { Status } from "@/components/status/status"
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
       <Feature />
       <Benefits />
       <Status />
+      <Relable />
+      <EaseToUse />
     </main>
   )
 }
