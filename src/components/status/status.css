@@ -5,6 +5,7 @@
   background-color: var(--bg-sec);
   padding: 30px 20px;
   gap: 20px;
+  background-image: url("@/assets/stars.webp");
 }
 
 .Status .title {
