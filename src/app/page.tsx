@@ -3,6 +3,7 @@ import { ClientCompany } from "@/components/clientcompany/page"
 import { Feature } from "@/components/feature/feature"
 import { Hero } from "@/components/hero/page"
 import { HeroTeam } from "@/components/heroteam/heroteam"
+import { Status } from "@/components/status/status"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ClientCompany />
       <Feature />
       <Benefits />
+      <Status />
     </main>
   )
 }
