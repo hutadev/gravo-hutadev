@@ -37,7 +37,7 @@ export function Benefits() {
         </div>
 
         <figure>
-          <Image src={Girl} alt="Girl" width={300} height={400} loading="lazy" />
+          <Image src={Girl} alt="Girl" width={300} height={300} loading="lazy" />
         </figure>
       </section>
     </>
