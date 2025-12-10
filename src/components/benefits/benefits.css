@@ -71,17 +71,8 @@
   }
 }
 
-.benefits figure {
-  background-color: var(--lilac);
-  width: 450px;
-  padding-top: 30px;
-  border-radius: 50px;
-  overflow: hidden;
-  border: 1px solid var(--white);
-}
-
 .benefits figure img {
-  width: 350px;
+  width: 500px;
   height: auto;
 }
 
@@ -103,8 +94,7 @@
 
   .benefits figure {
     width: 100%;
-    max-width: 550px;
-    padding: 20px 20px 0 20px;
+    max-width: 650px;
   }
 
   .benefits figure img {
@@ -121,10 +111,6 @@
 }
 
 @media (width < 360px) {
-  .benefits figure {
-    border-radius: 30px;
-  }
-
   .benefits .box-benefits .info .box {
     flex-direction: column;
     gap: 10px;
