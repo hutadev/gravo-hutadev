@@ -12,13 +12,12 @@ export function Feedback() {
   const carouselRef = useRef<HTMLDivElement>(null)
   const [index, setIndex] = useState(0)
 
-  // Array de depoimentos
   const depoimentos = [
     {
       nome: "Ana Martins",
       cargo: "Gestora de Marketing",
       empresa: "Innovatech",
-      mensagem: "O suporte foi excepcional e ajudou a nossa equipa a atingir os objetivos no prazo. Recomendo sem hesitar."
+      mensagem: "O suporte foi excepcional e ajudou a nossa equipa a atingir os objectivos no prazo. Recomendo sem hesitar."
     },
     {
       nome: "Rui Silva",
@@ -42,7 +41,7 @@ export function Feedback() {
       nome: "Carla Fernandes",
       cargo: "Especialista em TI",
       empresa: "TechVision",
-      mensagem: "Profissionalismo e atenção ao detalhe em cada etapa do projeto. Uma colaboração de alto nível."
+      mensagem: "Profissionalismo e atenção ao detalhe em cada etapa do projecto. Uma colaboração de alto nível."
     }
   ]
 
