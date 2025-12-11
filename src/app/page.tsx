@@ -8,11 +8,12 @@ import { Hero } from "@/components/hero/page"
 import { HeroTeam } from "@/components/heroteam/heroteam"
 import { Relable } from "@/components/relable/relable"
 import { Status } from "@/components/status/status"
+import { Subscribe } from "@/components/subscribe/subscribe"
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      {/*<Hero />
       <HeroTeam />
       <ClientCompany />
       <Feature />
@@ -20,8 +21,9 @@ export default function Home() {
       <Status />
       <Relable />
       <Feedback />
-      <EaseToUse />
+      <EaseToUse /> */}
       <ArticleHome />
+      <Subscribe />
     </main>
   )
 }
