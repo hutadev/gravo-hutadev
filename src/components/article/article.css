@@ -96,15 +96,6 @@
   padding: 5px 10px;
   border-radius: 100px;
   color: var(--lilac);
-  font-size: 0.9rem;
-  &:hover,
-  &:focus {
-    background-color: var(--lilac-hover);
-  }
-
-  &:active {
-    background-color: var(--lilac);
-  }
 }
 
 .article .article-home .the-article .article .tag-date p {
