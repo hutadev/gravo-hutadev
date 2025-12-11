@@ -1,3 +1,4 @@
+import { ArticleHome } from "@/components/article/article"
 import { Benefits } from "@/components/benefits/benefits"
 import { ClientCompany } from "@/components/clientcompany/page"
 import { EaseToUse } from "@/components/easetouse/easetouse"
@@ -20,6 +21,7 @@ export default function Home() {
       <Relable />
       <Feedback />
       <EaseToUse />
+      <ArticleHome />
     </main>
   )
 }

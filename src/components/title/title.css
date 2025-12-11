@@ -12,6 +12,7 @@
   margin: auto;
   margin-bottom: 10px;
   background-color: var(--bg-sec);
+  user-select: none;
 }
 
 .title-section .title {
