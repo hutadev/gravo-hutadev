@@ -1,0 +1,148 @@
+.footer {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  place-items: center;
+  align-items: start;
+  gap: 20px;
+}
+
+.footer .box-intro {
+  width: 100%;
+  max-width: 400px;
+  width: fit-content;
+}
+
+.footer .box-intro figure {
+  display: flex;
+  gap: 10px;
+}
+
+.footer .box-intro figure figcaption {
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.footer .box-intro p {
+  padding: 20px 0;
+  line-height: 1.4;
+}
+
+.footer .box-intro .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .box-intro .contact a {
+  text-wrap: nowrap;
+  width: fit-content;
+
+  &:hover,
+  &:focus {
+    color: var(--lilac);
+  }
+
+  &:hover .icon,
+  &:focus .icon {
+    color: var(--lilac);
+    border: 1px solid var(--lilac);
+  }
+}
+
+.footer .box-intro .contact a .icon {
+  background-color: var(--bg-sec);
+  border: var(--border);
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+}
+
+.footer .box-link {
+  width: fit-content;
+}
+
+.footer .box-link .title {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.footer .box-link ul {
+  margin-top: 20px;
+}
+
+.footer .box-link ul li a {
+  width: fit-content;
+  text-wrap: nowrap;
+
+  &:hover,
+  &:focus {
+    color: var(--lilac);
+  }
+}
+
+.footer .copy-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: var(--border);
+  padding: 20px 0;
+}
+
+.footer .copy-right p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer .copy-right .social-media ul {
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer .copy-right .social-media ul li a {
+  background-color: var(--black);
+  border: var(--border);
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  padding: 1px;
+
+  &:hover,
+  &:focus {
+    color: var(--white);
+    border: 1px solid transparent;
+    background-color: var(--lilac);
+  }
+
+  &:hover .icon,
+  &:focus .icon {
+    color: var(--white);
+  }
+}
+
+@media (width < 392px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer .box-link ul {
+    margin-top: 10px;
+  }
+}
+
+@media (width < 365px) {
+  .footer .copy-right {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}

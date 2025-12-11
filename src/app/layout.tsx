@@ -3,6 +3,7 @@ import { LenisWrapper } from "@/components/leniswrapper/page"
 import type { Metadata } from "next"
 import { Header } from "@/components/header/page"
 import "./globals.css"
+import { Footer } from "@/components/footer/footer"
 
 const BASE_URL = "https://gravo-hutadev.vercel.app"
 export const metadata: Metadata = {
@@ -57,6 +58,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <Header />
         <LenisWrapper>{children}</LenisWrapper>
+        <Footer />
       </body>
     </html>
   )
