@@ -1,6 +1,8 @@
 .footer {
+  margin: auto;
   width: 100%;
-  padding: 0 20px;
+  max-width: 1500px;
+  padding: 0 100px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -130,13 +132,25 @@
   }
 }
 
+@media (width < 920px) {
+  .footer {
+    padding: 0 40px;
+  }
+}
+
+@media (width < 620px) {
+  .footer {
+    padding: 0 30px;
+  }
+}
+
 @media (width < 421px) {
   .footer {
     margin-top: 70px;
   }
 }
 
-@media (width < 392px) {
+@media (width < 411px) {
   .footer .content {
     display: flex;
     flex-direction: column;
