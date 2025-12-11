@@ -14,7 +14,7 @@
 }
 
 .feedback .box-section figure {
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
 
   &::after {
@@ -27,7 +27,6 @@
 }
 
 .feedback .box-section figure img {
-  border-radius: 20px;
   width: 500px;
   height: auto;
 }
@@ -187,6 +186,7 @@
   .feedback .box-section figure {
     margin-bottom: 20px;
     width: 100%;
+    border-radius: 15px;
   }
 
   .feedback .box-section figure img {

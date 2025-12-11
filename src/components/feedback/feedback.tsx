@@ -2,7 +2,7 @@
 
 import "./feedback.css"
 import Image from "next/image"
-import girlwork from "@/assets/girlwork.jpg"
+import girlwork from "@/assets/girlwork.webp"
 import { TitleSection } from "../title/title"
 import { RiDoubleQuotesR } from "react-icons/ri"
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6"
