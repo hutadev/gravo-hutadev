@@ -97,7 +97,7 @@ export function Footer() {
       </div>
 
       <div className="copy-right">
-        <p>&#127275; Todos Direitos Resservados</p>
+        <p>&#127275; Todos Direitos Reservados</p>
         <div className="social-media">
           <ul>
             <li>
