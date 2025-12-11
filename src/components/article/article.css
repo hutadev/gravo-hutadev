@@ -95,7 +95,7 @@
   border: var(--border);
   padding: 5px 10px;
   border-radius: 100px;
-  color: var(--lilac);
+  color: var(--lilac-light);
 }
 
 .article .article-home .the-article .article .tag-date p {

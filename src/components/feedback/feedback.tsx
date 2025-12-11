@@ -114,11 +114,11 @@ export function Feedback() {
         </div>
 
         <div className="btn">
-          <button className={`btn-left ${index === 0 ? "disabled" : ""}`} onClick={handlePrev} disabled={index === 0}>
+          <button className={`btn-left ${index === 0 ? "disabled" : ""}`} onClick={handlePrev} disabled={index === 0} aria-label="Ir para esquerda">
             <FaArrowLeftLong />
           </button>
 
-          <button className={`btn-right ${index === depoimentos.length - 1 ? "disabled" : ""}`} onClick={handleNext} disabled={index === depoimentos.length - 1}>
+          <button className={`btn-right ${index === depoimentos.length - 1 ? "disabled" : ""}`} onClick={handleNext} disabled={index === depoimentos.length - 1} aria-label="Ir para direita">
             <FaArrowRightLong />
           </button>
         </div>

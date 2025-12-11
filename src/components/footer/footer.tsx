@@ -101,28 +101,28 @@ export function Footer() {
         <div className="social-media">
           <ul>
             <li>
-              <Link href="#">
+              <Link href="#" aria-label="Acessar nosso Facebook">
                 <div className="icon">
                   <LuFacebook />
                 </div>
               </Link>
             </li>
             <li>
-              <Link href="#">
+              <Link href="#" aria-label="Acessar nosso Instagra">
                 <div className="icon">
                   <LuInstagram />
                 </div>
               </Link>
             </li>
             <li>
-              <Link href="#">
+              <Link href="#" aria-label="Acessar nosso Twitter (X)">
                 <div className="icon">
                   <FaXTwitter />
                 </div>
               </Link>
             </li>
             <li>
-              <Link href="#">
+              <Link href="#" aria-label="Acessar nosso Youtube">
                 <div className="icon">
                   <LuYoutube />
                 </div>

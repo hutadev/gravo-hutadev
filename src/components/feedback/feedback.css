@@ -118,7 +118,7 @@
 
 .feedback .client-feedback .depoiment .content .info .cargo {
   font-size: 0.8rem;
-  color: var(--lilac);
+  color: var(--lilac-light);
 }
 
 .feedback .client-feedback .btn {
