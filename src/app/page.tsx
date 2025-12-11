@@ -13,7 +13,7 @@ import { Subscribe } from "@/components/subscribe/subscribe"
 export default function Home() {
   return (
     <main>
-      {/*<Hero />
+      <Hero />
       <HeroTeam />
       <ClientCompany />
       <Feature />
@@ -21,7 +21,7 @@ export default function Home() {
       <Status />
       <Relable />
       <Feedback />
-      <EaseToUse /> */}
+      <EaseToUse />
       <ArticleHome />
       <Subscribe />
     </main>
