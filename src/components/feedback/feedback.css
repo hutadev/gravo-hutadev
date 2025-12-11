@@ -1,0 +1,201 @@
+.feedback {
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.feedback .box-section {
+  position: relative;
+  padding-left: 60px;
+}
+
+.feedback .box-section figure {
+  border-radius: 10px;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #4230b55e;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.feedback .box-section figure img {
+  border-radius: 20px;
+  width: 500px;
+  height: auto;
+}
+
+.feedback .box-section .status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #4230b5ca;
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+}
+
+.feedback .box-section .status .number .title {
+  font-size: 1.3rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.feedback .box-section .status .number .desc {
+  line-height: 1.2;
+  color: var(--white);
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.feedback .client-feedback {
+  width: 100%;
+  max-width: 500px;
+}
+
+.feedback .client-feedback .title-section {
+  max-width: 500px;
+  margin: 0;
+  text-align: left;
+}
+
+.feedback .client-feedback .title-section .bt {
+  margin: 0 0 10px 0;
+}
+
+.feedback .client-feedback .icon {
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.feedback .client-feedback .icon svg {
+  font-size: 2.5rem;
+  color: var(--lilac);
+}
+
+.feedback .client-feedback .depoiment-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+}
+
+.feedback .client-feedback .depoiment {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.feedback .client-feedback .depoiment::-webkit-scrollbar {
+  display: none;
+}
+
+.feedback .client-feedback .depoiment .content {
+  max-width: 350px;
+  flex-shrink: 0;
+}
+
+.feedback .client-feedback .depoiment .content .info {
+  margin-top: 10px;
+}
+
+.feedback .client-feedback .depoiment .content .info .name {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.feedback .client-feedback .depoiment .content .info .cargo {
+  font-size: 0.8rem;
+  color: var(--lilac);
+}
+
+.feedback .client-feedback .btn {
+  width: fit-content;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.feedback .client-feedback .btn button {
+  padding: 10px 30px;
+  border-radius: 100px;
+  border: var(--border);
+  background-color: var(--lilac);
+  color: var(--white);
+
+  &:hover,
+  &:focus {
+    background-color: var(--lilac-hover);
+  }
+
+  &:active {
+    background-color: var(--lilac);
+  }
+}
+
+.feedback .client-feedback .btn button.disabled {
+  color: var(--text);
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: transparent;
+  border: var(--border);
+}
+
+@media (width < 980px) {
+  .feedback .box-section figure img {
+    width: 400px;
+  }
+}
+
+@media (width < 870px) {
+  .feedback .box-section {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .feedback .box-section figure {
+    margin-bottom: 20px;
+  }
+
+  .feedback .box-section figure img {
+    width: 300px;
+  }
+
+  .feedback .box-section .status {
+    position: static;
+  }
+}
+
+@media (width < 700px) {
+  .feedback {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feedback .box-section figure {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .feedback .box-section figure img {
+    width: 100%;
+  }
+
+  .feedback .client-feedback,
+  .depoiment-wrapper,
+  .feedback .client-feedback .depoiment .content {
+    max-width: 100% !important;
+  }
+}

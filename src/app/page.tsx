@@ -2,6 +2,7 @@ import { Benefits } from "@/components/benefits/benefits"
 import { ClientCompany } from "@/components/clientcompany/page"
 import { EaseToUse } from "@/components/easetouse/easetouse"
 import { Feature } from "@/components/feature/feature"
+import { Feedback } from "@/components/feedback/feedback"
 import { Hero } from "@/components/hero/page"
 import { HeroTeam } from "@/components/heroteam/heroteam"
 import { Relable } from "@/components/relable/relable"
@@ -17,6 +18,7 @@ export default function Home() {
       <Benefits />
       <Status />
       <Relable />
+      <Feedback />
       <EaseToUse />
     </main>
   )
