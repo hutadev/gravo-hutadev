@@ -54,19 +54,16 @@ export function Header() {
               </Link>
             </li>
             <li>
-              <Link href="#">Sobre</Link>
-            </li>
-            <li>
-              <Link href="#">Páginas</Link>
-            </li>
-            <li>
-              <Link href="#">Blog</Link>
-            </li>
-            <li>
-              <Link href="#">Contacto</Link>
+              <Link href="#">Serviços</Link>
             </li>
             <li>
               <Link href="#">Preços</Link>
+            </li>
+            <li>
+              <Link href="#">Sobre</Link>
+            </li>
+            <li>
+              <Link href="#">Contacto</Link>
             </li>
           </ul>
         </nav>
@@ -91,24 +88,29 @@ export function Header() {
           <nav className="link-mobile">
             <ul>
               <li>
-                <Link href="#" className="link-home">
+                <Link href="#" className="link-home" onClick={alternarMenu}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#">Sobre</Link>
+                <Link href="#" onClick={alternarMenu}>
+                  Serviços
+                </Link>
               </li>
               <li>
-                <Link href="#">Páginas</Link>
+                <Link href="#" onClick={alternarMenu}>
+                  Preços
+                </Link>
               </li>
               <li>
-                <Link href="#">Blog</Link>
+                <Link href="#" onClick={alternarMenu}>
+                  Sobre
+                </Link>
               </li>
               <li>
-                <Link href="#">Contacto</Link>
-              </li>
-              <li>
-                <Link href="#">Preços</Link>
+                <Link href="#" onClick={alternarMenu}>
+                  Contacto
+                </Link>
               </li>
             </ul>
           </nav>
